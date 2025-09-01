@@ -1,0 +1,21 @@
+# 忽略 Python 缓存
+__pycache__/
+*.pyc
+
+# 忽略 CSV 文件
+*.csv
+
+# 忽略 JSON 文件
+*.json
+#忽略parquet文件
+*.parquet
+#忽略pickle文件
+*.pickle
+#忽略pkl文件
+*.pkl
+# 忽略特定文件
+test.ipynb
+backtest.ipynb
+
+.idea/
+.env
