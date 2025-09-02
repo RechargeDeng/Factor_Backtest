@@ -1,27 +1,28 @@
 # High-Frequency-Predictor
 
-这是一个用于测试中高频数据预测力的Demo，主要的分为以下部分：
+This is a demo for testing the predictive power of mid-to-high-frequency data. It is primarily divided into the following parts:
 
--- Model模块定义模型，所有和模型相关的功能实现都应该在Model模块下完成，其他代码调用该模块接口进行模型训练和预测。初始预测目标为分类问题，回归问题待定。初始模型为lightgbm；
+-- The Model module defines the model. All functions related to the model should be implemented under this module, and other code should call its interfaces for model training and prediction. The initial prediction target is a classification problem (regression problems may be considered later). The initial model is LightGBM.
 
--- DataLoader模块定义数据预处理方法，所有处理原始数据的方法都应该在该模块下完成；
+-- The DataLoader module defines data preprocessing methods. All methods for processing raw data should be completed within this module.
 
--- Stats模块定义统计信息的方法，该模块是否集成于Model模块中待定，取决于是否需要统计其他统计量；
+-- The Stats module defines methods for statistical information. Whether this module is integrated into the Model module depends on whether other statistical metrics need to be calculated.
 
-#### 流程
+#### Workflow
 
-简化版本的流程应该依次为：
-- 测试有表达力的因子
-- 调用DataProcess模块得到np.array形式的输入和输出X，y；
-- 调用Model模块训练并预测，打印统计信息；
+The simplified workflow should proceed as follows:
 
-#### 模块调用
+· Test expressive factors.
+· Call the DataProcess module to obtain input and output arrays X and y in the form of np.array.
+· Call the Model module for training and prediction, and print statistical information.
 
--- Model模块调用为Model.fit(x,y,modelname='lgbm_regeression')
+#### Module Calls
 
-### 日志
+-- The Model module is called via:
+Model.fit(x, y, modelname='lgbm_regression')
+
+### Log
 
 ##### 2025-08-17
 
-- 搭建快速测试框架；
-
+· Set up a rapid testing framework.
