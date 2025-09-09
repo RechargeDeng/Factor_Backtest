@@ -1,4 +1,17 @@
-# Copyright (c) 2021 Dai HBG
+# Copyright 2025 Jason Deng
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ==============================================================================
 
 """
 该代码是1_num型运算符Cython版本的源代码，需要写2D和3D的版本
@@ -7,9 +20,6 @@
 - 时序最值位置默认从起始位置算起，例如如果当前是回溯10天最大值，则tsmaxpos(data, 10) = 9
 
 日志
-2021-12-25
-- init
-2021-01-20
 - 新增截断算子
 """
 
